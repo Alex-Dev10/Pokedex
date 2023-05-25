@@ -1,0 +1,116 @@
+.SearchContainer{
+  background: rgb(238,174,202);
+  background: linear-gradient(83deg, rgba(238,174,202,1) 0%, rgba(210,208,148,1) 1%, rgba(206,203,175,1) 85%, rgba(171,233,148,1) 100%);
+    height: 100vh;
+}
+
+.container-input {
+    position: relative;
+    
+    width: 400px;
+    margin: auto;
+  
+  }
+  
+  .input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input img {
+   position: absolute;
+   top: 8px;
+   cursor: pointer;
+margin-left: 10px;
+
+  
+  
+  
+  
+   transition: all .2s ease-in-out;
+  
+
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 300px;
+  }
+
+
+  /*card search container*/
+  /*.CardSearchContainer{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 40px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }*/
+
+.CardSearchContainer {
+  width: 400px;
+  height: 400px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.CardSearchContainer:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#b0e633, #53ef7d);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
